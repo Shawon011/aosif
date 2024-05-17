@@ -1,0 +1,13 @@
+.aboutItems li button {
+    font-size: 14px;
+    background-color: #eaeaea;
+    padding: 12px 10px;
+    color: #000;
+    transition: all 0.3s;
+}
+
+.aboutItems li button:hover {
+    background-color: #e60012;
+    color: #fff;
+}
+

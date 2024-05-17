@@ -1,0 +1,55 @@
+.proCardBox {
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+}
+
+.card-title {
+    position: relative;
+}
+
+.card-title::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    bottom: -10px;
+}
+
+.proCardBox ul li a{
+    position: relative;
+}
+
+.proCardBox ul li a::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.proCardBox ul li a:hover:before {
+    width: 100%;
+}
+
+.hoverPart {
+    top: 0;
+    transform: translateY(100%);
+    transition: all 0.3s;
+}
+
+.proCardBox:hover .hoverPart {
+    transform: translateY(0%);
+}
+
+.procardBtn {
+    transform: translateY(0%);
+    transition: all 0.3s;
+}
+
+.proCardBox:hover .procardBtn {
+    transform: translateY(100%);
+}

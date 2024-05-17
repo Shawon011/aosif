@@ -1,0 +1,14 @@
+.messageTitle {
+    position: relative;
+    display: inline-block;
+}
+
+.messageTitle::before {
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 3px;
+    background-color: #e60012;
+    bottom: -10px;
+    left: 0;
+}

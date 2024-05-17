@@ -1,0 +1,49 @@
+.iconItem {
+    position: relative;
+    width: 48px;
+}
+.contactText{
+    position: absolute;
+    background: #e60012;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    z-index: 9;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 200px;
+    left: -220px;
+    visibility: hidden;
+    -webkit-opacity: 0.00;
+}
+.iconItem:hover .contactText {
+    visibility: visible;
+    -webkit-opacity: 1.00;
+    transition: all 0.3s;
+}
+
+.contactText span {
+    position: relative;
+}
+
+.contactText span::before {
+    content: " ";
+    margin-top: -12px;
+    width: 25px;
+    height: 25px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    position: absolute;
+    top: 50%;
+    right: -35px;
+    background-color: #e60012;
+    -webkit-transform: translateX(0px) translateY(0px) scale(1, 0.5) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+}
+
+.iconBox:hover {
+    background: #e60012;
+    transition: all 0.3s;
+    cursor: pointer;
+}

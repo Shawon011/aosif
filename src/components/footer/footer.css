@@ -1,0 +1,17 @@
+.footerRightArea {
+    padding-top: 200px;
+    text-align: center;
+    background-image: url("/public/assets/footer.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.footerBtn {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+}
