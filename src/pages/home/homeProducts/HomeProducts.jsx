@@ -8,27 +8,27 @@ import RightProductItem from "./rightProductItem/RightProductItem";
 
 function HomeProducts() {
   return <>
-    <div className="mt-5 h-[100vh]">
-        <div className="container m-auto">
+    <div className="mt-5 ">
+        <div className="container m-auto relative">
             <h1 className="text-baselightblack text-[32px] font-bold text-center">Products</h1>
 
-            <div className="mt-[5rem]">
+            <div className="mt-[5rem] allItem">
 
-                <div className="ml-[300px] topProductItem">
+                <div className="ml-[300px] lg:block hidden topProductItem">
                     <ProductItem 
                     productIcon=<FaCarBattery className="text-baseblack group-hover:text-basewhite"/> productTitle="Mobile Power Station" 
                     produtDes1="Trailer type Power station" produtDes2="Emergency Power Supply Vehicle" />
                 </div>
 
-               <div className="flex justify-between">
-               <div className="leftproductItem">
-                <div className="ml-[120px]">
+               <div className="md:flex block justify-between">
+               <div className="leftproductItem md:block flex flex-col items-center">
+                <div className="lg:ml-[120px] ml-0">
                     <ProductItem 
                     productIcon=<FaCarBattery className="text-baseblack group-hover:text-basewhite"/> productTitle="Mobile Power Station" 
                     produtDes1="Trailer type Power station" produtDes2="Emergency Power Supply Vehicle" />
                 </div>
 
-                <div className="ml-[50px]">
+                <div className="lg:ml-[50px] ml-0">
                     <ProductItem 
                     productIcon=<FaBox className="text-baseblack group-hover:text-basewhite"/> productTitle="Silent GenSet" 
                     produtDes1="Standard type" produtDes2="Standard Container Type" produtDes3="Super Silent Type" produtDes4="Economic type"/>
@@ -41,14 +41,14 @@ function HomeProducts() {
                 </div>
                 </div>
 
-                <div className="rightproductItem">
-                <div className="ml-[-120px]">
+                <div className="rightproductItem md:block flex flex-col items-center">
+                <div className="lg:ml-[-120px] ml-0">
                     <RightProductItem 
                     productIcon=<FaCarBattery className="text-baseblack group-hover:text-basewhite"/> productTitle="Mobile Power Station" 
                     produtDes1="Trailer type Power station" produtDes2="Emergency Power Supply Vehicle" />
                 </div>
 
-                <div className="ml-[-50px]">
+                <div className="lg:ml-[-50px] ml-00">
                     <RightProductItem 
                     productIcon=<FaBox className="text-baseblack group-hover:text-basewhite"/> productTitle="Silent GenSet" 
                     produtDes1="Standard type" produtDes2="Standard Container Type" produtDes3="Super Silent Type" produtDes4="Economic type"/>
@@ -62,6 +62,11 @@ function HomeProducts() {
                 </div>
                </div>
                 
+            </div>
+            <div className="productimgBox lg:block hidden">
+                <div className="img w-[300px] h-auto">
+                    <img className="w-full h-full" src="/assets/pro06.jpg" alt="" />
+                </div>
             </div>
         </div>
     </div>
