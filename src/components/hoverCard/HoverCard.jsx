@@ -1,13 +1,13 @@
 import "./hoverCard.css"
 
 // eslint-disable-next-line react/prop-types
-function HoverCard({ img, text, icon, className, href, textClassName, imgClassName }) {
+function HoverCard({ img, text, icon, className, href, textClassName, imgClassName, textpClassName, aClassName, contentCalass }) {
   return <>
     
     <div  className={className}>
-      <a href={href}>
+      <a className={aClassName} href={href}>
         <div className="hoverCard">
-                <div className="content">
+                <div className={`content ${contentCalass}`}>
                     <div className={`imgBox ${imgClassName}`}>
                         <img className="w-full h-full" src={img} alt="" />
                     </div>
@@ -20,7 +20,7 @@ function HoverCard({ img, text, icon, className, href, textClassName, imgClassNa
                     {
                       text && 
                       <div className={textClassName}>
-                        <p className="text-center mt-1 text-[18px] z-10">{text}</p>
+                        <p className={`text-center text-[16px] z-10 ${textpClassName}`}>{text}</p>
                       </div>
                     }
                 </div>

@@ -1,0 +1,69 @@
+.curcale {
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.productItemBox {
+    position: relative;
+}
+
+.curcale::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #222;
+    z-index: 9;
+}
+.curcale::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #2222;
+    z-index: 1;
+}
+
+.itemTitle {
+    position: absolute;
+    width: 230px;
+}
+
+.itemTitle:hover .curcale::before {
+    background-color: red;
+
+}
+
+.itemTitle:hover .curcale::after {
+    background-color: rgba(249, 64, 64, 0.485);
+
+}
+
+.itemDesc ul li {
+    list-style-type: disc;   
+}
+
+.itemDesc ul li::marker {
+    color: red;
+    font-size: 15px;
+} 
+
+.topProductItem .itemDesc {
+    border-right: 1px dashed red;
+    border-bottom: 1px dashed red;
+}
+
+.leftproductItem .itemDesc {
+    border-right: 1px dashed red;
+    border-bottom: 1px dashed red;
+}
+
+.rightproductItem .itemDesc {
+    border-left: 1px dashed red;
+    border-bottom: 1px dashed red;
+}
+
+

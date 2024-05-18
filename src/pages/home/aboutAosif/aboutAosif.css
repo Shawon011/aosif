@@ -1,3 +1,18 @@
 .about {
     background-image: url(/assets/aboutAosif.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.homeCulture h1 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.homeCulture p {
+    margin-top: 5px;
 }

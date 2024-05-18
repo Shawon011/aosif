@@ -1,0 +1,32 @@
+.hoverCard {
+    position: relative;
+    overflow: hidden;
+}
+
+.imgBox {
+    position: relative;
+    overflow: hidden;
+}
+
+.imgBox::before {
+    position: absolute;
+    content: " ";
+    width: 600px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 254, 254, 0.526);
+    transform: translate(-130%, -50%) rotate(-50deg);
+    transition: all 0.5s;
+}
+
+.hoverCard:hover .imgBox::before {
+    transform: translate(25%, -50%) rotate(-50deg);
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

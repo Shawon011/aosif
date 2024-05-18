@@ -1,0 +1,12 @@
+.listItem li span {
+    width: 16.6%;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+@media(max-width: 750px) {
+    .listItem li span {
+        font-size: 12px;
+    }
+}
