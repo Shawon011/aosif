@@ -1,13 +1,33 @@
 .aboutItems li button {
-    font-size: 14px;
-    background-color: #eaeaea;
-    padding: 12px 10px;
-    color: #000;
-    transition: all 0.3s;
+  font-size: 14px;
+  background-color: #eaeaea;
+  padding: 12px 10px;
+  color: #000;
+  transition: all 0.3s;
 }
 
 .aboutItems li button:hover {
-    background-color: #e60012;
-    color: #fff;
+  background-color: #e60012;
+  color: #fff;
+}
+.aboutItems button[data-state="active"] li button {
+  background: #e60012;
+  color: white;
 }
 
+.listItem li span {
+  width: 16.6%;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+@media (max-width: 750px) {
+  .listItem li span {
+    font-size: 12px;
+  }
+}
+
+.accordionTrigger {
+  width: 100% !important;
+}
